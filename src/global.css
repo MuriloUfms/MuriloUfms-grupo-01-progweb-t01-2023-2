@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #121214;
+  color: #e1e1e6;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}
+
+body,
+input,
+button,
+textarea {
+  font: 400 1rem "Roboto", sans-serif;
+}
+
+.layout {
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 48px 1fr;
+}

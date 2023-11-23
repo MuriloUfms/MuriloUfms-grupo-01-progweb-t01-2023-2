@@ -1,0 +1,46 @@
+.header {
+  padding: 0.5rem 2rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  background: #202024;
+}
+
+.header .header-logo-title {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.header .header-logo-title .logo {
+  width: 2rem;
+  height: 2rem;
+}
+
+.header .header-logo-title .title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.header-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.header-nav a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.header-nav a svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.header-nav a.active {
+  color: #8257e6;
+}
