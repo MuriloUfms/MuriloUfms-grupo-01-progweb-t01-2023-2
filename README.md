@@ -12,7 +12,7 @@ O PokeQuiz é um aplicativo de quiz que desafia os usuários a identificar difer
 - Firebase
 
 ## Como Executar Localmente
-
+Certifique-se de ter o [Node.js](https://nodejs.org/) instalado.
 ```bash
 git clone https://github.com/MuriloUfms/MuriloUfms-grupo-01-progweb-t01-2023-2.git
 cd MuriloUfms-grupo-01-progweb-t01-2023-2
