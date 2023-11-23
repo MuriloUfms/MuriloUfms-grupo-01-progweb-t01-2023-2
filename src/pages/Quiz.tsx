@@ -49,16 +49,16 @@ export function Quiz() {
       randomPokemons.add(pokemon);
     }
     setPokemons(Array.from(randomPokemons).sort(() => Math.random() - 0.5));
-    setShowNextQuestion(false);
   }
 
   useEffect(() => {
+    setShowNextQuestion(false);
     getPokemons();
   }, [showNextQuestion]);
 
   async function handleOptionClick(selectedOption: string) {
     if (selectedOption === currentPokemon?.pokemonName) {
-      setIsCorrect(selectedOption === currentPokemon?.pokemonName);
+      setIsCorrect(true);
 
       const usersCollection = collection(db, "users");
       const userSnap = await getDocs(
@@ -69,6 +69,8 @@ export function Quiz() {
       await updateDoc(doc(db, "users", userDoc.id), {
         hits: userData.hits + 1,
       });
+    } else {
+      setIsCorrect(false);
     }
     setShowFeedback(true);
   }
